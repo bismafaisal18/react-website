@@ -1,0 +1,26 @@
+.box {
+
+  padding: 10px;
+  flex: 1; /* Equal width for all boxes */
+  margin: 0 10px; /* Add margin for spacing */
+}
+.center {
+  text-align: center;
+}
+.home,
+.product,
+.about,
+.contact {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px; /* Adjust the font size as desired */
+  padding: 10px 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column; /* Stack the navigation items vertically */
+  justify-content: center;
+  align-items: center;
+}

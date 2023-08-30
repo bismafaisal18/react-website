@@ -1,0 +1,83 @@
+/* CSS Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  width: 100%;
+  height: 600px; /* Reduce the height */
+  background-color: white; /* Set the background color to white */
+  margin-top: 20px;
+  padding-left: 20px; /* Add left padding */
+  padding-right: 20px; /* Add right padding */
+  margin-left: 10px; /* Add left margin */
+  margin-right: 10px; /* Add right margin */
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* Change this to background-size: contain; */
+}
+
+.carousel-inner .left,
+.carousel-inner .right {
+  flex: 5;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  cursor: pointer;
+}
+
+.carousel-inner .center {
+  flex: 80;
+  height: 100%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .carousel {
+    height: 400px; /* Reduce the height further */
+    margin-top: 15px; /* Reduce the top margin */
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .carousel-inner {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    height: 300px; /* Reduce the height even further */
+    margin-top: 5px; /* Reduce the top margin */
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .carousel-inner {
+    background-size: contain;
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+  }
+}
+/* Specific media query for iPad landscape mode */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .carousel {
+    height: 400px; /* Adjust the height for iPad landscape */
+    margin-top: 10px; /* Adjust the top margin for iPad landscape */
+  }
+}

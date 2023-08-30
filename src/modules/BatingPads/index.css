@@ -1,0 +1,16 @@
+.bann {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    max-width: 100%;
+    height: 396px;
+    width: 1584px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bann img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
